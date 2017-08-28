@@ -297,8 +297,8 @@ new function() {
                 }
                 if (type === 'style') {
                     style.push(entry.attribute + ': ' + value);
-                } else {
-                    attrs[entry.attribute] = value == null ? 'none'
+                } else  {
+                    attrs[entry.attribute] = value == null ? ''
                             : type === 'color' ? value.gradient
                                 // true for noAlpha, see above
                                 ? exportGradient(value, item)
